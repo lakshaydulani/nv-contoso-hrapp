@@ -17,6 +17,7 @@ html {
 .carousel {
   max-height: 200px;
   overflow: hidden;
+  display: flex;
 }
 
 .carousel a {
