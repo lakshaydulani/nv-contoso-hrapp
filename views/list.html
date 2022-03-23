@@ -28,11 +28,14 @@
       <h4 class="card-title">
         <%= rental.name %> | <%= formatter.format(rental.price) %>
       </h4>
-      <p class="card-text"><%= rental.description %></p>
+      <span class="smallFonts"><%= rental.location
+        %></span>
       <p class="card-text">
-        <%= rental.bedrooms %>bd <%= rental.bathrooms %>ba, <%= rental.location
-        %>
+        <%= rental.bedrooms %>bedrooms <%= rental.bathrooms %> bathrooms
       </p>
+      
+      <p class="card-text description"><%= rental.description %></p>
+      
       
         <% if (rental.info) { %>
           <p class="card-text">

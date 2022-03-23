@@ -3,17 +3,57 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'system-ui', Helvetica, Arial, sans-serif;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
 }
 
 .main {
   min-height: 800px;
 }
 
+/* card styles */
+
+
 .card {
-  width: 100%;
-  border: 1px solid black;
-  border-radius: 5px
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #104786;
+  border-color: #1a5496;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card a {
+  padding: 5px 10px;
+  border: 0px solid grey;
+  border-radius: 5px;
+  background-color: hsl(212, 81%, 96%);
+}
+
+.card .button.primary {
+  min-width: 70px;
+  text-align: center;
+}
+
+.card .button.danger {
+  margin-left: 0;
+}
+
+.card span {
+  color: #19334e;
+  font-size: 0.8em;
 }
 
 .card-body {
@@ -34,7 +74,12 @@ html {
 
 .card-text {
   font-size: 1.2rem;
-  margin-bottom: 15px;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+.card-text.description {
+  padding: 10px 0;
 }
 
 .stage {
@@ -105,7 +150,6 @@ html {
 
 .link {
   text-decoration: none;
-  font-family: 'Roboto';
   color: black;
   cursor: pointer;
 }
